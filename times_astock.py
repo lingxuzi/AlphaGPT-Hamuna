@@ -25,12 +25,12 @@ def _get_env(key, default, cast_type=str):
         return val.lower() in ('true', 'yes') # 布尔值支持多种写法
     return cast_type(val)
 
-INDEX_CODE = _get_env('INDEX_CODE', '000001')
-START_DATE = _get_env('START_DATE', '20220101') # 训练数据开始：近10年
+INDEX_CODE = _get_env('INDEX_CODE', '588000')
+START_DATE = _get_env('START_DATE', '20200101') # 训练数据开始：近10年
 END_DATE = _get_env('END_DATE', '20270101') # 训练数据结束
 BATCH_SIZE = _get_env('BATCH_SIZE', 1024, int)
-TRAIN_ITERATIONS = _get_env('TRAIN_ITERATIONS', 100, int)
-MAX_SEQ_LEN = _get_env('MAX_SEQ_LEN', 10, int)
+TRAIN_ITERATIONS = _get_env('TRAIN_ITERATIONS', 400, int)
+MAX_SEQ_LEN = _get_env('MAX_SEQ_LEN', 8, int)
 COST_RATE = _get_env('COST_RATE', 0.0004, float)
 LAST_NDAYS = _get_env('LAST_NDAYS', 42, int)      # 用于展示最近交易日的数量（默认42个交易日，约2个月）
 HOLD_PERIOD = _get_env('HOLD_PERIOD', 11, int)     # 持仓周期（包含买入当天后的第2..第HOLD_PERIOD天作为卖出候选）

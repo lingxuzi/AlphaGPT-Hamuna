@@ -1,0 +1,9 @@
+Strategy Formula: ADD(SIGN(NEG(TREND)),ABS(TREND))
+                    BestSortino: 12.6054
+                    ------------------------------------------------------------
+                    Test Period    : 2025-04-18 ~ 2026-02-06
+                    Ann. Return    : 204.01%
+                    Ann. Volatility: 42.88%
+                    Sharpe Ratio   : 4.711
+                    Max Drawdown   : 36.28%
+                    Calmar Ratio   : 5.623
